@@ -1,0 +1,94 @@
+/* Perustyyli */
+body {
+  background-color: #98DBC6;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 0; 
+}
+
+/* Yläosa */
+header {
+  background-image: url(turkoosi.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+header h1 {
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Navigaatio */
+.topnav {
+  background-color: #F18D9E;
+  padding: 10px;
+}
+.topnav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a.active {
+  font-weight: bold;
+}
+.topnav a:hover {
+  background-color: #5BC8AC; /* Choose any color you like */
+  color: #fff; /* Optional: change text color on hover */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+/* Sisältö */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.kuvat {
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  font-size: 12px;
+  background-color: #F18D9E;
+  padding: 10px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Tablet: max leveys 768px */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 40px; /* pienempi otsikko */
+  }
+  .topnav a {
+    font-size: 16px; /* pienemmät nav-tekstit */
+    margin: 0 5px;
+  }
+  .kuvat {
+    width: 70%; /* kuva skaalaa leveämmäksi suhteessa */
+  }
+}
+
+/* Mobiili: max leveys 480px */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column; /* linkit allekkain */
+  }
+  .topnav a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .kuvat {
+    width: 100%;
+  }
+}
