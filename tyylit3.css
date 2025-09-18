@@ -45,6 +45,7 @@ main {
   max-width: 800px;
   margin: 20px auto;
   padding: 10px;
+  font-size: 18px;
 }
 .kuvat {
   width: 300px;
@@ -79,6 +80,10 @@ footer {
 @media (max-width: 480px) {
   body {
     font-size: 13px; /* Add this line to control mobile font size */
+  }
+  main {
+    font-size: 15px; /* Smaller main text for mobile */
+    padding: 5px;    /* Optional: less padding */
   }
   header h1 {
     font-size: 30px;
