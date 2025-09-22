@@ -1,13 +1,13 @@
-/* Perustyyli */
+/* ---------- Perustyyli ---------- */
 body {
   background-color: #B6E5D8;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  margin: 0; 
+  margin: 0;
 }
 
-/* Yläosa */
+/* ---------- Yläosa ---------- */
 header {
   background-image: url(turkoosi.jpg);
   background-position: center;
@@ -16,36 +16,39 @@ header {
 }
 header h1 {
   color: white;
-  font-size: 60px;
+  font-size: 55px;
   text-shadow: 2px 2px 4px #000;
 }
 
-/* Navigaatio */
+/* ---------- Navigaatio ---------- */
 .topnav {
   background-color: #FFC2C7;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .topnav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
 }
 .topnav a.active {
   font-weight: bold;
 }
 .topnav a:hover {
-  background-color: #FBE5C8; /* Choose any color you like */
-  color: #fff; /* Optional: change text color on hover */
-  border-radius: 4px; /* Optional: rounded corners */
+  background-color: #FBE5C8;
+  color: #fff;
 }
 
-/* Sisältö */
+/* ---------- Sisältö ---------- */
 main {
   max-width: 800px;
   margin: 20px auto;
   padding: 10px;
-  font-size: 18px;
 }
 .kuvat {
   width: 300px;
@@ -53,7 +56,7 @@ main {
   margin: 20px 0;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 footer {
   font-size: 12px;
   background-color: #FFC2C7;
@@ -62,41 +65,29 @@ footer {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-/* Tablet: max leveys 768px */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 40px; /* pienempi otsikko */
-  }
-  .topnav a {
-    font-size: 16px; /* pienemmät nav-tekstit */
-    margin: 0 5px;
-  }
-  .kuvat {
-    width: 70%; /* kuva skaalaa leveämmäksi suhteessa */
-  }
-}
-
 /* Mobiili: max leveys 480px */
 @media (max-width: 480px) {
   body {
-    font-size: 13px; /* Add this line to control mobile font size */
+    font-size: 16px;
   }
   main {
-    font-size: 15px; /* Smaller main text for mobile */
-    padding: 5px;    /* Optional: less padding */
+    padding: 5px;
   }
   header h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .topnav {
-    display: flex;
-    flex-direction: column; /* linkit allekkain */
+    flex-direction: column;
+    gap: 0;
+    padding: 6px;
   }
   .topnav a {
     margin: 5px 0;
     font-size: 18px;
+    padding: 8px 0;
   }
   .kuvat {
     width: 100%;
+    max-width: 100%;
   }
 }
